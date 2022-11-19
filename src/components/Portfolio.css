@@ -1,0 +1,24 @@
+.works-hello {
+    height: 450px;
+  }
+
+.thumbnail-project {
+    width: auto;
+    height: 370px;
+}
+
+.radius {
+  border-radius: 5px;
+}
+
+.button {
+  border-color: #221D23;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.active {
+  background-color: #221D23;
+  color: #F9AF2E;
+  font-weight: 400;
+}

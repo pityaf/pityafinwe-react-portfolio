@@ -37,11 +37,15 @@
   }
 }
 */
+html, body, #App, #App>div {
+  height: 100%;
+}
 
 body {
   background-color: #F4F4F9;
 }
 
-.col-12 {
-  width: 1420px;
+.App-footer {
+  color: #F4F4F9;
+  background-color: #221D23;
 }
