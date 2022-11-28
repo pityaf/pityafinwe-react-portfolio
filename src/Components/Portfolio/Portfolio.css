@@ -1,0 +1,15 @@
+h2.bold {
+    font-weight: bold;
+}
+
+a {
+    color: #221D23;
+    text-decoration: none;
+}
+a:hover {
+    color: #F9AF2E;
+}
+
+.project-thumbnail {
+    height: 400px;
+}

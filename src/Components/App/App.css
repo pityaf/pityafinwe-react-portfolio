@@ -1,0 +1,53 @@
+body {
+  color: #221D23;
+  background-color: #F4F4F9;
+  font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, p {
+  color: #221D23;
+}
+h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+a.nav-link {
+  font-size: 18px;
+  font-weight: 400;
+}
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.front-end {
+  background-color: rgba(36, 123, 160, 0.75);
+}
+.design {
+  background-color: rgba(238, 96, 85, 0.75);
+}
+.modelling {
+  background-color: rgba(99, 163, 117, 0.75);
+}
+.mockUp {
+  height: fit-content;
+  width: 100%;
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+}
+.no-padding {
+  padding: 0px;
+}
+.no-margin {
+  margin: 0px;
+}
+
+.none {
+  display: none;
+}

@@ -1,0 +1,11 @@
+.project-thumbnail {
+    height: 400px;
+}
+
+.thumbnail {
+    height: 100%;
+    width: 100%;
+}
+.img {
+    border: solid 1px black;
+}
