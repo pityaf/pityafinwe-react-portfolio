@@ -31,14 +31,9 @@ export const Description = ({ info }) => {
 
                 <Container className="p-5">
                     <Row>
-                        <Col className="pt-4">
-                            <p className="text-center"> <a href={ info.link }> { info.desc } </a> </p>
-                        </Col>
-                    </Row>
-                    <Row>
                         <Col>
-                            {/**<h3>Brief</h3>
-                            <p> { info.brief }</p>  */}
+                            <h3>Brief</h3>
+                            <p> { info.brief }</p> 
                         </Col>
                     </Row>
                     <Row>
@@ -48,8 +43,20 @@ export const Description = ({ info }) => {
                         </Col>
                     </Row>
                     <Row>
+                        <Col className="pt-4">
+                            <p className="text-center"> <a href={ info.link }> { info.desc } </a> </p>
+                        </Col>
+                    </Row>
+                    <Row>
                         <Col className= 'thumbnail no-padding'>
-                            <img className="w-100 h-100 img" src={ info.img } alt='project-thumbnail' />
+                        {
+                            info.img.map(element => <img className="w-100 h-100 img mt-5" src={ element } alt='project-thumbnail' />)
+                        }
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className="pt-4">
+                            <p className="text-center"> <a href={ info.link }> { info.desc } </a> </p>
                         </Col>
                     </Row>
                 </Container>

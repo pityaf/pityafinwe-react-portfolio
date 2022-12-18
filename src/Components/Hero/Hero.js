@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 import './Hero.css'
 
@@ -24,6 +25,14 @@ export const Hero = () => {
                     Nel mio tempo libero modello in 3D in campo artistico e commerciale. <br />
                     Attivo in diverse comunità online con lo speudonimo Pityafinwe.
                     </p>
+                </Col>
+            </Row>
+            <Row className="my-4 text-center">
+                <Col>
+                <Nav.Link href="#personal">Progetti Personali</Nav.Link>
+                </Col>
+                <Col>
+                <Nav.Link href="#its">Progetti ITS INCOM</Nav.Link>
                 </Col>
             </Row>
         </Container>

@@ -51,3 +51,10 @@ p {
 .none {
   display: none;
 }
+
+a:hover {
+  color: #F9AF2E;
+}
+.nav-link:hover {
+  color: #F9AF2E;
+}

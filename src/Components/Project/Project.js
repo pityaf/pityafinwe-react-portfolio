@@ -16,10 +16,10 @@ export const Project = ({ info }) => {
                 </Col>
             </Row>
             <Row className='h-75'>
-                <Col xs lg="3" className='no-padding d-flex align-items-end ps-2 pb-4'>
+                <Col xs lg="3" className='no-padding d-flex align-items-center ms-5'>
                     <img className="mockUp" src={ info.mockUp } alt='project-thumbnail' />
                 </Col>
-                <Col className='align-items-center pt-5'>
+                <Col className='d-flex flex-column justify-content-center align-items-start '>
                     <h2 className='bold'> { info.head } </h2>
                     <h3> { info.subHead } </h3>
                 </Col>

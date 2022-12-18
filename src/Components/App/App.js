@@ -12,7 +12,8 @@ import { Footer } from '../Footer/Footer';
 
 import { ScrollToTop } from '../../util/ScrollToTop/ScrollToTop';
 
-import { projectInfo } from '../ProjectInfo/ProjectInfo';
+import { ITSProjectInfo } from '../ProjectInfo/ProjectInfo';
+import { PersonalProjectInfo } from '../ProjectInfo/ProjectInfo';
 
 export const App = () => {
 
@@ -33,16 +34,14 @@ export const App = () => {
             {/** All projects */}
             <Route path='/' element={<Portfolio />} />  
 
-            {/** Personal Brand */}
-            <Route path={ projectInfo[0].url } element={ <Description info={ projectInfo[0] } /> } /> 
-            {/** Paolo Cantoreggi Portfolio */}
-            <Route path={ projectInfo[1].url } element={ <Description info={ projectInfo[1] } /> } /> 
-            {/** .Comanda */}
-            {/*<Route path={ projectInfo[2].url } element={ <Description info={ projectInfo[2] } /> } /> */}
-            {/** First portfolio project codecademy */}
-            <Route path={ projectInfo[3].url } element={ <Description info={ projectInfo[3] } /> } />
-            {/** 3D tower scene */}
-            <Route path={ projectInfo[4].url } element={ <Description info={ projectInfo[4] } /> } /> 
+            {
+              PersonalProjectInfo.map(element => <Route path={ element.url } element={ <Description info={ element } /> } />)
+            }
+
+            {
+              ITSProjectInfo.map(element => <Route path={ element.url } element={ <Description info={ element } /> } />)
+            }
+
           </Routes>
         </section>
 
